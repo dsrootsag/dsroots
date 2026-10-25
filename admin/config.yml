@@ -1,11 +1,11 @@
 backend:
   name: github
-  repo: dsrootsag/dsroots # Your exact GitHub username/repo
+  repo: dsrootsag/dsroots
   branch: main
-  base_url: https://api.netlify.com # Keep this if you already linked Netlify, it handles the GitHub Auth
+  base_url: https://api.netlify.com
 
-media_folder: "assets/uploads" # Photos will go here
-public_folder: "/assets/uploads" # How the website will find them
+media_folder: "assets/uploads" 
+public_folder: "/assets/uploads" 
 
 collections:
   # 1. WEBSITE SETTINGS (Update Hero Background & Text)
