@@ -1,18 +1,15 @@
-backend:
-  name: git-gateway
-  branch: main # Or 'master' if your default branch is master
-
-media_folder: "assets/uploads" # Images uploaded here
-public_folder: "/assets/uploads" # Path in the website
-
-collections:
-  - name: "blog"
-    label: "News & Updates"
-    folder: "_posts"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Content Manager | DS ROOTS AGRO</title>
+    <!-- Loads the Decap CMS User Interface -->
+    <link href="https://unpkg.com/decap-cms@^3.0.0/dist/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Loads the Decap CMS Logic -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </body>
+</html>
