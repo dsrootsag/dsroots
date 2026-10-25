@@ -2,10 +2,11 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets/uploads" 
-public_folder: "/assets/uploads" 
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
 
 collections:
+  # 1. WEBSITE SETTINGS (Update Hero Background & Text)
   - name: "settings"
     label: "Website Settings (Homepage)"
     files:
@@ -18,6 +19,7 @@ collections:
           - {label: "Tagline", name: "tagline", widget: "string"}
           - {label: "Subtitle", name: "subtitle", widget: "text"}
 
+  # 2. PHOTO GALLERY
   - name: "gallery"
     label: "Photo Gallery"
     folder: "_gallery"
@@ -28,6 +30,7 @@ collections:
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Description", name: "description", widget: "text", required: false}
 
+  # 3. VIDEO GALLERY
   - name: "videos"
     label: "Video Gallery"
     folder: "_videos"
@@ -38,6 +41,7 @@ collections:
       - {label: "Upload Video (MP4)", name: "video_file", widget: "file", required: false}
       - {label: "Or YouTube Video Link", name: "youtube_url", widget: "string", required: false}
 
+  # 4. NEWS & UPDATES
   - name: "blog"
     label: "News & Updates"
     folder: "_posts"
